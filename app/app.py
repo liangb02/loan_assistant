@@ -10,9 +10,9 @@ from flask import Flask, request, redirect, jsonify
 app = Flask(__name__, static_url_path="/s")
 
 
-@app.route('/')
-def index():
-    return redirect("/s/index.html", code=302)
+# @app.route('/')
+# def index():
+#     return redirect("/s/index.html", code=302)
 
 
 # my prediction score based on users' input info
