@@ -7,7 +7,7 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 import nltk
 from collections import Counter
 # import matplotlib.pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 import string
 
 
