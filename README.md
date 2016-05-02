@@ -1,9 +1,9 @@
 # Loan Helper: Are you able to get money from Lending Club?
 
-Loan Helper could predict the probability of whether you are able to get a loan from Lending Club. At the same time, provide suggestions about how to obtain a higher chance to get the money. Try it at: ?????????
+Loan Helper could predict the probability of whether you are able to get a loan from Lending Club. At the same time, provide suggestions about how to obtain a higher chance to get the money. Try it at: http://lh.bingliang.me
 
 ## Motivations and Goals
-As "the world's largest online marketplace connecting borrowers and investor"<sup>1</sup>, Lending club would evaluate each borrower' credit history, employment length, debt-to-income(dti) ratio, reasons to borrow money other information<sup>1</sup>, in order to determine whether issue the loan or not. Surprisingly, there are only around 10% of the load requests issued. It is obvious that the loan amount, the potential loaner's employment length and credit history on the decision of Lending Club. However, in this project, I want to dig deeper about Lending Club's criteria when they make the decision of whether to grant a loan. In particular, I tried to apply the natural language processing (NLP) in the employment title and/or other sections<sup>5</sup> to find whether any kind of specific languages might affect Lending Club's decision to the loan requests. My another goal is to find the favorable words which might increase a potential loaner's chance to get money. At the same time, to find sensitive words which loaners should avoid. Accordingly, based on the loaner's info, I will provide them with suggestions from different perspectives so that the probability of receiving a loan will increase.
+As "the world's largest online marketplace connecting borrowers and investor"<sup>1</sup>, Lending club would evaluate each borrower' credit history, employment length, debt-to-income(dti) ratio, reasons to borrow money other information<sup>1</sup>, in order to determine whether issue the loan or not. Surprisingly, there are only around 10% of the load requests issued. It is obvious that the loan amount, the potential loaner's employment length and credit history have an impact on the decision of Lending Club. However, in this project, I want to dig deeper about Lending Club's criteria when they make the decision of whether to grant a loan. In particular, I tried to apply the natural language processing (NLP) in the employment title and/or other sections<sup>5</sup> to find whether any kind of specific languages might affect Lending Club's decision. Another goal is to find the favorable words which might increase a potential loaner's chance to get money. At the same time, to find sensitive words which loaners should avoid. Accordingly, based on the loaner's info, I will provide them with suggestions from different perspectives so that the probability of receiving a loan from Lending Club will increase.
 <br>
 
 Lending Club Acceptance Rate from 2007 to 2015:
@@ -21,14 +21,15 @@ The dataset comes from the public "loan data" and "declined loan data" from 2007
 1. Label "rejected" as positive '1' and 'accepted' as negative '0' from both
 issued loan and rejected loan requests from 2007 to 2013.
 
-2. Select the basic features as well as NLP features and feature engineering
-['loan_amnt', 'dti', 'emp_length']
+2. Select the basic features as well as NLP features and feature engineering.
 
-  Features which will be enforced with NLP features are: 'title' in the accepted data and 'Loan Title' from the rejected data.
+  Basic Features: ['loan_amnt', 'dti', 'emp_length']
+
+  Features which will be enforced with NLP analysis are: 'title' in the accepted data and 'Loan Title' from the rejected data.
 
   Geo info was not considered in my model.
 
-3. As the sizes of two groups are imbalanced (90% vs. 10%) and the smaller group has more than 230,000 samples. I used undersampling method to rebalance the sample group.
+3. As the sizes of two groups are imbalanced (90% vs. 10%) and the smaller group has more than 230,000 samples. I used undersampling method to rebalance the sample groups.
 
 4. EDA on the dataset
 
@@ -110,7 +111,7 @@ In addition to the length feature, other important NLP features to be incorporat
 ### Web Service:
 
 The link to 'Loan Helper'
-is live at ????
+is live at http://lh.bingliang.me
 
 
 Go to the 'HOME' page, fill in the form and submit. The probability of receiving a loan from Lending Club will be shown. In case that the user might fail to get a loan,  suggestions on how to increase the chance to get a loan will be provided. Please feel free to play around. :)
