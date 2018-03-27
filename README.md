@@ -1,6 +1,6 @@
-# Loan Helper: Are you able to get money from Lending Club?
+# Loan Assistant: Are you able to get money from Lending Club?
 
-Loan Helper could predict the probability of whether you are able to get a loan from Lending Club. At the same time, provide suggestions about how to obtain a higher chance to get the money. Try it at: http://lh.bingliang.me
+Loan assistant could predict the probability of whether you are able to get a loan from Lending Club. At the same time, provide suggestions about how to obtain a higher chance to get the money. Try it at: http://lh.bingliang.me
 
 ## Motivations and Goals
 As "the world's largest online marketplace connecting borrowers and investor"<sup>1</sup>, Lending club would evaluate each borrower' credit history, employment length, debt-to-income(dti) ratio, reasons to borrow money other information<sup>1</sup>, in order to determine whether issue the loan or not. Surprisingly, there are only around 10% of the load requests issued. It is obvious that the loan amount, the potential loaner's employment length and credit history have an impact on the decision of Lending Club. However, in this project, I want to dig deeper about Lending Club's criteria when they make the decision of whether to grant a loan. In particular, I tried to apply the natural language processing (NLP) in the employment title and/or other sections<sup>5</sup> to find whether any kind of specific languages might affect Lending Club's decision. Another goal is to find the favorable words which might increase a potential loaner's chance to get money. At the same time, to find sensitive words which loaners should avoid. Accordingly, based on the loaner's info, I will provide them with suggestions from different perspectives so that the probability of receiving a loan from Lending Club will increase.
@@ -110,7 +110,7 @@ In addition to the length feature, other important NLP features to be incorporat
 
 ### Web Service:
 
-The link to 'Loan Helper'
+The link to 'Loan Assistant'
 is live at http://lh.bingliang.me
 
 
